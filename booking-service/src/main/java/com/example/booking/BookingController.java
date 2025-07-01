@@ -13,7 +13,7 @@ public class BookingController {
 
     @PostMapping
     public String createBooking(@RequestBody Map<String, String> booking) {
-        String kongBaseUrl = "http://192.168.30.67:30080";
+        String kongBaseUrl = "http://kong-proxy.kong:80";
 
         restTemplate.postForObject(kongBaseUrl + "/payment/pay", booking, String.class);
         restTemplate.postForObject(kongBaseUrl + "/notify/send", booking, String.class);
