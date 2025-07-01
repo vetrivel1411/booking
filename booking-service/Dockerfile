@@ -11,4 +11,4 @@ WORKDIR /app
 COPY . /app
 RUN mvn clean package
 EXPOSE 3001
-CMD ["java", "-jar", "target/booking-service-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/booking-service.jar"]
