@@ -22,7 +22,7 @@
     </dependencies>
 
     <build>
-        <finalName>booking-service</finalName> <!-- ✅ Add this line -->
+        <finalName>booking-service</finalName>
 
         <plugins>
             <plugin>
